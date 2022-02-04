@@ -13,3 +13,14 @@ Utiliza alguma biblioteca de terceiros para realizar as chamadas HTTP. Você é 
 Realizar tratamento de erros
 (O que acontece se o dispositivo estiver sem internet, ou o servidor não responder corretamente)?
 Realizar o armazenamento local (cache) das informações da API
+
+
+## Criar um aplicativo com 2+ telas.
+## Criar uma lista de drinks com imagem e nome do mesmo
+## Quando clicar no drink, o mesmo deve ser selecionado e mais informacoes devem ser obtidas
+## Informar o usuario o que esta sendo baixado e processado
+## Utilizar uma arquitetura de software
+## Criar um repositorio git ## 
+## Realizar chamada HTTP atraves de uma bibiloteca
+## Usar trycatch com erros sobre o servidor ou a internet por exepmlo
+## Realizar armazenamento local
