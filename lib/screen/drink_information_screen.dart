@@ -68,6 +68,7 @@ class _DrinkInformationScreenState extends State<DrinkInformationScreen> {
       return Scaffold(
         appBar: AppBar(
           title: const Text("Informacoes da bebida"),
+          backgroundColor: Colors.purple,
         ),
         body: isLoading
             ? const Center(child: CircularProgressIndicator())
