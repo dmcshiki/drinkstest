@@ -19,8 +19,8 @@ Realizar o armazenamento local (cache) das informações da API
 #### Criar uma lista de drinks com imagem e nome do mesmo -FINALIZADO-
 #### Quando clicar no drink, o mesmo deve ser selecionado e mais informacoes devem ser obtidas -FINALIZADO-
 #### Informar o usuario o que esta sendo baixado e processado -FINALIZADO-
-#### Utilizar uma arquitetura de software
+#### Utilizar uma arquitetura de software -EM PROCESSO-
 #### Criar um repositorio git -FINALIZADOO-
 #### Realizar chamada HTTP atraves de uma bibiloteca -FINALIZADO-
 #### Usar trycatch com erros sobre o servidor ou a internet por exepmlo -FINALIZADO-
-#### Realizar armazenamento local
+#### Realizar armazenamento local -FINALIZADO-
