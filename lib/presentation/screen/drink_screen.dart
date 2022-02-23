@@ -1,7 +1,8 @@
-import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:drinkstest/common/drink_test_strings.dart';
 import 'package:drinkstest/data/repository/drink_repository.dart';
+import 'package:drinkstest/presentation/common/error_view.dart';
+import 'package:drinkstest/presentation/common/loading_view.dart';
 import 'package:drinkstest/presentation/model/drinks.dart';
 import 'package:drinkstest/presentation/screen/drink_information_screen.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class _DrinkScreenState extends State<DrinkScreen> {
   ScreenStates state = ScreenStates.loading;
   late List<Drinks> drinks;
 
-  void getDrink() {
+  void getDrinks() {
     setState(() {
       state = ScreenStates.loading;
     });
@@ -47,7 +48,7 @@ class _DrinkScreenState extends State<DrinkScreen> {
 
   @override
   void initState() {
-    getDrink();
+    getDrinks();
     super.initState();
   }
 
@@ -58,7 +59,7 @@ class _DrinkScreenState extends State<DrinkScreen> {
         backgroundColor: Colors.brown[400],
       ),
       body: state == ScreenStates.loading
-          ? const Center(child: CircularProgressIndicator())
+          ? const LoadingView()
           : state == ScreenStates.success
               ? GridView.builder(
                   padding: const EdgeInsets.symmetric(
@@ -141,46 +142,5 @@ class _DrinkScreenState extends State<DrinkScreen> {
                     ),
                   ),
                 )
-              : Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const Center(
-                      child: Text.rich(
-                        TextSpan(
-                          children: [
-                            TextSpan(
-                              text: 'Ops!',
-                              style: TextStyle(fontSize: 40),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                    const Text.rich(
-                      TextSpan(
-                        children: [
-                          TextSpan(
-                            text:
-                                'Não foi possível realizar conexão com o servidor',
-                            style: TextStyle(fontSize: 15),
-                          ),
-                        ],
-                      ),
-                    ),
-                    GestureDetector(
-                      onTap: getDrink,
-                      behavior: HitTestBehavior.opaque,
-                      child: const Padding(
-                        padding: EdgeInsets.all(16),
-                        child: Text(
-                          'Tentar novamente',
-                          style: TextStyle(
-                            color: Colors.purple,
-                            fontSize: 16,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ));
+              : ErrorView(onTryAgain: getDrinks));
 }

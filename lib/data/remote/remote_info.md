@@ -1,0 +1,2 @@
+Utilizamos o mesmo principio da pasta Cache. Este, por sua vez, utlizamos para resgatar informações da web através de HTTP Request, utilizamos o Dio para isso. 
+Este é o primeiro método de acesso as informações que nosso aplicativo necessita para funcionar, visto que só depois de acessar as informações através dele, podemos converter em domain ou cache.

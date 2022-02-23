@@ -1,0 +1,2 @@
+Aqui temos as telas que são comuns para todo o app, no caso, a tela de loading e a tela de erro.
+Utilizamos dessa maneira para que não seja necessário reescrever funções que são iguais para multiplas telas.

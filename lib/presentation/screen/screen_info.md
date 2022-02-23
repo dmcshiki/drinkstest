@@ -1,0 +1,2 @@
+Nessa pasta, separamos os arquivos do projeto que contém a parte visual final.
+Realizamos uma enumeração de estado para sabermos se os arquivos estão sendo carregados, é também onde realizamos o estado final do nosso app, que é mostrar ao usuário as informações obtidas ou informa-lo caso algum problema tenha acontecido.

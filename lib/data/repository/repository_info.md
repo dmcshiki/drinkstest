@@ -1,0 +1,1 @@
+Por fim, o repository resgata as informações obtidas e converte as mesmas para que sejam utilizadas no aplicativo. O remote vira cache e o cache vira domain para que então, as informações obtidas sejam mostradas para o usuário final.

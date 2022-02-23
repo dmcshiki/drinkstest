@@ -4,7 +4,11 @@ import 'package:drinkstest/presentation/model/drink_information.dart';
 import 'package:drinkstest/presentation/model/drinks.dart';
 
 extension DrinkRMMapper on DrinkRM {
-  Drinks toDomainModel() => Drinks(name: name, image: image, id: id);
+  Drinks toDomainModel() => Drinks(
+        name: name,
+        image: image,
+        id: id,
+      );
 }
 
 extension DrinkInformationRMMapper on DrinkInformationRM {
