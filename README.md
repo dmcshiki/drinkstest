@@ -14,8 +14,6 @@ Realizar tratamento de erros
 (O que acontece se o dispositivo estiver sem internet, ou o servidor não responder corretamente)?
 Realizar o armazenamento local (cache) das informações da API
 
-
-#### Criar um aplicativo com 2+ telas. -FINALIZADO-
 #### Criar uma lista de drinks com imagem e nome do mesmo -FINALIZADO-
 #### Quando clicar no drink, o mesmo deve ser selecionado e mais informacoes devem ser obtidas -FINALIZADO-
 #### Informar o usuario o que esta sendo baixado e processado -FINALIZADO-
