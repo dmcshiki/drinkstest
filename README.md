@@ -20,5 +20,5 @@ Realizar o armazenamento local (cache) das informações da API
 #### Utilizar uma arquitetura de software -FINALIZADO-
 #### Criar um repositorio git -FINALIZADOO-
 #### Realizar chamada HTTP atraves de uma bibiloteca -FINALIZADO-
-#### Usar trycatch com erros sobre o servidor ou a internet por exepmlo -FINALIZADO-
+#### Usar trycatch com erros sobre o servidor ou a internet por exemplo -FINALIZADO-
 #### Realizar armazenamento local -FINALIZADO-
